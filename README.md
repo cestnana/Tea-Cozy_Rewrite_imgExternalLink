@@ -1,4 +1,3 @@
-Off-Platform Project: 
-"Tea Cozy"
+[Design to Code] Off-Platform Project: "Tea Cozy"
 in Codecademy > Web Development (Skill Path) 
 > Getting More Advanced with Design > Layout with Flexbox.
