@@ -1,0 +1,167 @@
+/* Web Development
+Off-Platform Project: Tea Cozy
+In this project, you will create a fictional tea shop website on your own computer.
+
+We will provide a design spec and image assets to help you along the way. A design spec is an image of a web page outlined with all of its CSS properties and values. These are usually created by a designer as a source of instructions for a web developer. This project assumes that you will be able to reproduce the basic HTML and CSS with little guidance. */
+
+/* When looking over the design spec we notice the content needed, the layout of the page, and other styles. There are numerous ways to create this page and make it match the spec as closely as possible. One of the styles noted on the design spec, opacity: 0.9;, is optional and will be up to you to decide whether to use the style or not.
+
+Opacity, can make high contrast colors - like white on black - look softer and more subtle. When adding opacity, we suggest adding it to your main container (not the navigation section), but remember to ask yourself - do I like the look of this? */
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* nav {
+  border: 2px dashed rgb(9, 255, 0);
+}
+
+body {
+  border: 2px dashed rgb(255, 0, 0);
+}
+
+footer {
+  border: 2px dashed rgb(0, 255, 247);
+}
+
+#body-main {
+  border: 2px dashed rgb(0, 0, 255);
+
+#our-mission {
+  border: 2px dashed rgb(242, 255, 0);
+}
+} */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  padding: 1%;
+}
+
+section {
+  padding: 10% 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  top: 0px;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  position: absolute;
+  /* right: 7%; */
+  right: 50px;
+}
+#logo {
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 25px;
+}
+a {
+  text-decoration: none;
+  color: seashell
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#body-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* margin: 50px; */
+}
+
+#our-mission {
+  height: 700px;
+  /* width: 83%; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*1y9il1s*_gcl_au*MTcwMTU5NTMyMC4xNzIxMDU1NDAx*_ga*MzU3ODc5MjA2NS4xNzIxMDU1Mzk1*_ga_3LRZM6TM9L*MTcyNjY4MDc1OC4zLjAuMTcyNjY4MDc1OC42MC4wLjA.");
+  background-size: cover;
+  background-position: center; /* wow! */
+}
+#our-mission-inner {
+  background-color: black;
+  width: 100%;
+}
+
+#tea-of-the-month {
+  /* width: 1000px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card {
+  display: inline-block;
+  margin: 1%;
+}
+.card > img {
+  width: 300px;
+  height: 200px;
+}
+.card > h4 {
+  margin-top: 10px;
+}
+
+#locations {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 80%; */
+  height: 500px;
+  /* padding: 1%; */
+  padding: 50px 0;
+  margin-top: 69px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1bi68ee*_gcl_au*MTcwMTU5NTMyMC4xNzIxMDU1NDAx*_ga*MzU3ODc5MjA2NS4xNzIxMDU1Mzk1*_ga_3LRZM6TM9L*MTcyNjY4MDc1OC4zLjAuMTcyNjY4MDc1OC42MC4wLjA.");
+  background-size: cover;
+  background-position: center; /* wow! */
+}
+#location-title {
+  margin-bottom: 15px;
+}
+#location-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.location-cards {
+  background-color: black;
+  width: 25%;
+  margin: 1%;
+  opacity: 1;
+  /* height: 75%; */
+}
+
+#contact {
+  height: 200px;
+}
+
+footer {
+  position: absolute;
+  left: 20px;
+}
